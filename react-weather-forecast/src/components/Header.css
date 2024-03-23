@@ -8,3 +8,13 @@
 .header {
     background-color: rgba(0, 0, 0, 0.6) !important;
 }
+
+.main-search {
+    width: 80% !important;
+    border-color: white !important;
+}
+
+.recent-search {
+    text-align: left !important;
+    margin-top: 40px !important;
+}
