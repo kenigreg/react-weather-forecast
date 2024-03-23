@@ -1,0 +1,10 @@
+
+.image {
+    background-image: url('../../public/noaa-m10xFgSsvts-unsplash.jpg') !important;
+    height: 500px !important;
+
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
