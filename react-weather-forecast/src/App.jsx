@@ -1,14 +1,13 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-import Header from './components/Header';
+import PortfolioContainer from './components/PortfolioContainer';
+
 
 
 function App() {
   
   return (  
     <div>
-      <NavBar />
-      <Header />
+      <PortfolioContainer />
     </div>
   )
 }

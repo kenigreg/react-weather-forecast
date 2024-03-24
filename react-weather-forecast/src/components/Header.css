@@ -1,6 +1,6 @@
 
 .image {
-    background-image: url('../../public/noaa-m10xFgSsvts-unsplash.jpg') !important;
+    background-image: url('/noaa-m10xFgSsvts-unsplash.jpg') !important;
     height: 500px !important;
 
 }
@@ -17,4 +17,8 @@
 .recent-search {
     text-align: left !important;
     margin-top: 40px !important;
+}
+
+input {
+    color: white !important;
 }
