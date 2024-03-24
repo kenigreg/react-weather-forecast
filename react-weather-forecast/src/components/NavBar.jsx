@@ -36,7 +36,7 @@ function NavBar(props) {
                         <input
                             onChange={props.handleChange}
                             type="search"
-                            className="form-control rounded"
+                            className="form-control rounded text-color"
                             placeholder="Search for a location"
                             aria-label="Search"
                             aria-describedby="search-addon"

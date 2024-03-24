@@ -5,6 +5,16 @@ import Header from './Header';
 import { apiKey } from '../API';
 
 function PortfolioContainer() {
+
+    //Use Effect Hook
+    useEffect(() => {
+        fetchWeather();
+    }, []);
+
+    useEffect(() => {
+        fetchForecast();
+    }, []);
+
     let queryURLWeather, queryURLForecast;
 
     //Getting user search term into state
@@ -19,6 +29,7 @@ function PortfolioContainer() {
     const [searchForecastData, setSearchForecastData] = useState({
         forecastResults: [],
     });
+
 
     // URL for API Call
     
@@ -39,9 +50,6 @@ function PortfolioContainer() {
        
     };
 
-    useEffect(() => {
-        fetchWeather();
-    });
 
     
     //API request for forecast weather to openweather using Axios
@@ -55,10 +63,6 @@ function PortfolioContainer() {
             });
     };
 
-   useEffect(() => {
-        fetchForecast();
-    });
-
     
     //Get search term from user input and set to state
     const handleChange = (event) => {
@@ -71,9 +75,9 @@ function PortfolioContainer() {
     //function to handle submiting user query
     const handleSubmit = (event) => {
         event.preventDefault();
-        
-            fetchWeather();
             fetchForecast();
+            fetchWeather();   
+        event.target.value = '';
     }
 
 

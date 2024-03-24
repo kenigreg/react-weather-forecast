@@ -2,3 +2,7 @@ form {
     width: 30% !important;
     margin: 10px !important;
 }
+
+.text-color {
+    color: black !important;
+}
