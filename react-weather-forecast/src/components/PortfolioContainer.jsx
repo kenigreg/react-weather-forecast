@@ -22,8 +22,6 @@ function PortfolioContainer() {
     
     queryURLWeather = `https://api.openweathermap.org/data/2.5/weather?q=${searchData.search}&appid=${apiKey}&units=metric`;
     
-
-
     queryURLForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${searchForecastData.search2}&appid=${apiKey}&units=metric`;
 
 
