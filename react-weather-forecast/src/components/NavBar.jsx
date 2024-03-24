@@ -2,7 +2,7 @@ import React from 'react';
 import './NavBar.css';
 
 
-function NavBar() {
+function NavBar(props) {
 
     return (
             <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary">
@@ -33,14 +33,15 @@ function NavBar() {
                         </ul>
 
                         <form className="d-flex input-group">
-                            <input
-                                type="search"
-                                className="form-control rounded"
-                                placeholder="Search for a location"
-                                aria-label="Search"
-                                aria-describedby="search-addon"
+                        <input
+                            onChange={props.handleChange}
+                            type="search"
+                            className="form-control rounded"
+                            placeholder="Search for a location"
+                            aria-label="Search"
+                            aria-describedby="search-addon"
                             />
-                            <span className="input-group-text border-0" id="search-addon">
+                            <span onClick={props.handleSubmit} className="input-group-text border-0" id="search-addon">
                                 <i className="fas fa-search"></i>
                             </span>
                         </form>
